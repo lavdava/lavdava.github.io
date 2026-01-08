@@ -1,0 +1,78 @@
+:root {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: radial-gradient(blue);
+}
+
+@media(prefers-color-scheme: dark) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: radial-gradient(red, white);
+    }
+}
+
+.pk-card {
+    width: 20em;
+    height: fit-content;
+    background-image: linear-gradient(#b58282, 10%, #c94c4c 40%);
+    padding: 1rem;
+    padding-bottom: 1.5em;
+    border-radius: 1em;
+    border: 5px, solid, pink;
+    box-shadow: 5px, 5px, red;
+}
+
+#pk-title {
+    height: 3rem;
+    width: auto;
+    background-color: red;
+    align-content: end;
+    padding-left: 8.25rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#pic {
+    display: flex;
+    width: 15em;
+    margin: auto;
+    justify-content: center;
+    height: auto;
+    border-radius: 5px;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid red;
+    border-right: 4px solid yellow;
+    border-left: 4px solid green;
+}
+
+#move_grid {
+    height: 7.5em;
+    width: auto;
+    border: 10px solid transparent;
+    background-color: darkred;
+    border-image: url(pokeBorder.png) 30 round;
+    margin-top: 0.75em;
+    border-radius: 5px;
+    display: grid;
+    grid-auto-columns: min-content;
+    row-gap: 20px;
+}
+
+#move {
+    margin-top: 0px;
+    height: 2.5em;
+    width: auto;
+    background-color: red;
+}
