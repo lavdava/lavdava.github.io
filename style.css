@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -21,3 +25,35 @@ ul li a {
 ul li a:hover {
   background-color: #111111;
 }
+
+.page-card{
+  display: inline-block;
+  height: auto;
+  width: 600px;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #ee8e8e;
+}
+
+.page-decription{
+  width: fit-content;
+}
+.page-title{
+  text-align: center;
+  font-size: 2rem;
+  background-image: linear-gradient(10deg, rgb(12,79,194) 5%, rgb(126, 112, 112)ß 30%, rgb(16, 238, 16) 90%);
+  border-radius: 40px;
+  height: 2em;
+  align-content: center;
+}
+ .page-img{
+  margin: 15px;
+  width: fit-content;
+  background-color: red;
+ }
+
+ #project-cards{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+ }
