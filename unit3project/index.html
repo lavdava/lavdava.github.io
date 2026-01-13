@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>William Petty - Unit 3 Project</h1>
+    </header>
+    <main>
+        <form action="display.html" id="userForm">
+            <fieldset>
+                <legend>Quick Survey</legend>
+
+                <p id="name-msg"></p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <br>
+
+                <p id="email-msg"></p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+
+                <p id="select-msg"></p>
+                <label for="selection">Favorite Gen 1 Starter:</label>
+                <select name="selection" id="selection">
+                    <option value="">Select</option>
+                    <option value="Charmander">Charmander</option>
+                    <option value="Bulbasaur">Bulbasaur</option>
+                    <option value="Squirtle">Squirtle</option>
+                </select>
+                <br>
+
+                <p id="age-msg"></p>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="5" max="110">
+                <br>
+
+                <p id="box-msg"></p>
+                <label for="agree">Agree:</label>
+                <input type="checkbox" name="agree" id="agree">
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <br>
+    <footer>
+        <p>All data used will not be shared with others; it will only be displayed to you.</p>
+    </footer>
+</body>
+
+</html>

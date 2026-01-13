@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Page</title>
+</head>
+
+<body>
+    <header>
+        <h2>Submission Details</h2>
+    </header>
+    <main>
+        <p id="displayName"></p>
+        <hr>
+        <p id="displayEmail"> </p>
+        <hr>
+        <p id="displayAge"></p>
+        <hr>
+        <p id="displayPokemon"></p>
+        <hr class="reflection">
+        <p class="reflection">I was able to validate my form by using a function that checked for input from the user.
+            I assigned elements by id to variables to check for user input, and set validation variables to true or false depending on the input.
+            Then, I checked each validation variable and make sure every single one of them was true before submitting the form.
+            I made sure to add a note so the user knows that data is not being shared with anybody else.
+            I also used semantic HTML to make sure the form was accesible to those with disabilities.
+            On top of this, I added messages to point the user in the right direction to meet input requirements using paragraphs with ids and changing their text content in js.
+        </p>
+    </main>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("displayName").textContent = "Name " + params.get("name")
+        document.getElementById("displayEmail").textContent = "Email " + params.get("email")
+        document.getElementById("displayAge").textContent = "Age: " + params.get("age")
+        document.getElementById("displayPokemon").textContent = "Favorite Pokemon: " + params.get("pokemon")
+    </script>
+    <style>
+        main {
+            border: 1px solid black;
+            border-radius: 20px;
+            text-align: center;
+            background-color: #fff8e7;
+            width: 500px;
+        }
+
+        hr {
+            width: 250px;
+
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5eee6
+        }
+        p.reflection{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        hr.reflection{
+            width: 350px;
+        }
+        
+    </style>
+
+</body>
+
+</html>

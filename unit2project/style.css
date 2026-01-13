@@ -1,0 +1,25 @@
+:root{
+    --fontColor: #112A46;
+    --headColor: #0b2433;
+    --mainColor: #ACC8E5;
+}
+p{
+    color:var(--fontColor)
+    
+}
+h1{
+    color:var(--headColor)
+}
+body{
+    background-color:var(--mainColor)
+}
+h2{
+    text-align: center;
+}
+img{
+    border: #112A46 solid 3px;
+}
+
+audio{
+    text-align: center;
+}
