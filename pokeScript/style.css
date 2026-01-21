@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body {
+main {
     height: 100vh;
     display: flex;
     justify-content: center;
