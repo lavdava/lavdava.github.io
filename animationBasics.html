@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="animationBasics.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="cardpage.html">Cardpage</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="exitContainer">
+        <div class="exitCard"></div>
+        I would use transform when I am trying to change one element in a page because it is easy to use on specific
+        elements.
+        To turn off animation, I would use media with the prefered reduce motion and then put no animation: @media
+        (prefers-reduced-motion: reduce) {transition:none}
+    </div>
+    <h1>Part A - Concepts</h1>
+    <ol>
+        <li>Define a CSS transition and list its four shorthand parts with examples.</li>
+        According to W3 schools, "CSS transitions allows you to change property values smoothly, over a given duration."
+        They include transition-property, e.g. width, transition-duration, e.g. 2s, transition-timing-function, e.g.
+        ease, and transition-delay (says when the animation starts), e.g. 1s.
+        <li>Explain the difference between transition and @keyframes animation. When would you use each?</li>
+        Transition lets you do single step changes, used for small visual effects, while keyframes make multistep
+        animations, used for advanced graphics.
+        <li>What does transform-origin control? Give an example.</li>
+        Transform origin controls which part of an element a transformation should start from. For example, a rotation
+        starting from the top left of a box.
+        <li>Name two timing functions and describe how they feel to users.</li>
+        Ease out starts quickly with a slow end, feeling immediately responsive due to its quick start. Ease in is the
+        opposite, feeling slow to begin with a sudden stop.
+
+    </ol>
+    <h1>Part B - Coding Tasks</h1>
+    <div class="container">
+        <div class="card"></div>
+        <button class="scaleBtn">Scale button</button>
+        <div class="new"></div>
+        <div class="panel"></div>
+        <button id="btn">Panel</button>
+    </div>
+    <h1>Part C - Reflection</h1>
+    <p>Motion improved understanding with the scale button, as the animation clearly shows the button being pressed. I also made sure to add line spacing between animations to make sure they don't overlap. However, the exit ticket animation overlaps with the border, making it look a little off. The slow pulse felt the most appealing, as it doesn't add too much motion and stops after a certain amount of iterations. A trade off for performance could be limiting animations, making the page run smoothly but having less visual appeal.</p>
+    <script src="animationBasics.js"></script>
+</body>
+
+</html>

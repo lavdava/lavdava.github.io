@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="cardpage.html">Cardpage</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <ol style="font-family: sans-serif;">
+        <li>A font stack is an order of fonts that the paragraph will use, going down to the next one if the previous one is unavailable. A generic family is used at the end so that if all other fonts fail, there will be a default font to fallback to.</li>
+        <br>
+        <li>Web safe fonts are fonts that do not have to be imported, and have the advantage of always being available. Web fonts have to be imported, but allow you to find any font that'd you'd like if you're able to import it.</li>
+        <br>
+        <li>px is an absolute unit that allows you to be extremely precise and doesn't change depending on outside factors. em is a unit that can be changed depending on what you style the parent element as, allowing you to have different font size units across elements. Rem goes by the root and is useful for if you want a unit that is the same for every element.</li>
+        <br>
+        <li>Unitless line height is useful because it works regardless of the screen size</li>
+        <br>
+        <li>Measure is the type of unit used to define factors such as font size. For example, giving a paragraph a measure of 16px</li>
+        <br>
+        <li>It can improve readabilty if the text is too clumped together and needs a little more spacing, but it can harm it if you add too much spacing making it hard to read.</li>
+        <hr>
+    </ol>
+    <p style="font-family: Alfa Slab One, sans-serif">This is the Alfa Slab One font with a fallback of sans-serif</p>
+    <p style="font-size: 2rem; font-family: sans-serif;">This is my paragraph styled with rem</p>
+    <div style="font-size: 16px; font-family: sans-serif;">
+        <p style="font-size: 2em;">This is a paragraph relative to its div container, is uses 2em which is 32px</p>
+    </div>
+    
+    <div class="prose">
+        <article>
+            <p style="margin-bottom: 100px; font-family: sans-serif;">This is a paragraph in my article
+            </p>
+            <p style="font-family: sans-serif;">This is another paragraph in my article</p>
+        </article>
+    </div>
+
+</body>
+
+</html>

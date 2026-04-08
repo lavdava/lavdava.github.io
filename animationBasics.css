@@ -1,0 +1,105 @@
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+        /* 1.25 to make it a small, gentle scale increase */
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.exitContainer {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    flex-direction: column;
+    /* separate section for the exit ticket */
+}
+
+.exitCard {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+
+}
+
+.exitCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 4px 4px pink;
+    /* applies the shorthand transitions when hovering */
+}
+
+li {
+    line-height: 50px;
+    /* makes it more visually appealing by adding a gap between list items */
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    flex-direction: column;
+    gap: 50px;
+    /* gap is the same reasoning as the list, just for the container elements this time */
+}
+
+.card {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 5px 4px 4px pink;
+}
+
+.scaleBtn {
+    transition: transform 0.2s ease;
+    outline: 2px solid transparent;
+    /* added an outline but didn't give it a color so that it can only be seen on the focus */
+    
+}
+
+.scaleBtn:focus {
+    outline-color: red;
+}
+
+.scaleBtn:active {
+    transform: scale(0.98);
+    /* requested scale */
+}
+
+.new {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    animation: pulse 3s 6
+    /* i made the duration 3s so the animation is gentle, sort of like a resting heartbeat */
+}
+
+.panel{
+    background-color: black;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+.appear{
+    transform: scale(2);
+    opacity: 1;
+    /* I thought it'd be funny to make it appear out of nowhere and grow twice the size */
+}

@@ -1,0 +1,32 @@
+body{
+    padding: 50px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+}
+.card img{
+    width: auto;
+    height: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    display: block;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+.card img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    
+}
+

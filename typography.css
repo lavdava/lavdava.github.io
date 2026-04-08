@@ -1,0 +1,10 @@
+:root{
+    font-size: 16px;
+}
+.prose{
+    max-width: 8ch;
+    line-height: 2;
+}
+body{
+    font-family: Alfa Slab One, sans-serif
+}
