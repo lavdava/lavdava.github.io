@@ -1,0 +1,39 @@
+@keyframes shapechange {
+    0% {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 80px solid black;
+    }
+
+    33% {
+        border-left: 40px solid;
+        border-right: 40px solid;
+        border-bottom: 80px solid black;
+    }
+
+    66% {
+        border-radius: 50%;
+    }
+
+    100% {
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-bottom: 80px solid black;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.shape {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 80px solid black;
+    animation: shapechange 2s infinite;
+}
