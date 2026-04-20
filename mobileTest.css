@@ -1,0 +1,42 @@
+@media (min-width:48rem) {
+    /* mobile styles */
+    :root {
+        --main-bg-color: #ffffff;
+        --main-text-color: #000;
+        --default-spacing: 24px;
+    }
+    .card{
+        width: 250px;
+        height: 350px;
+    }
+}
+:root{
+    --main-bg-color: #f0f0f0;
+    --main-text-color: #333;
+    --default-spacing: 16px;
+}
+body{
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+h1 {
+    text-align: center;
+    padding: var(--default-spacing);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: var(--default-spacing);
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 200px;
+    height: 300px;
+    color: var(--main-text-color);
+    margin: var(--default-spacing);
+}
