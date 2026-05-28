@@ -4,41 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UnitVProject</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../style.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="userLogin.css">
 </head>
 
 <body>
-    <div id="nav-placeholder"></div>
-    <main>
-        <header>
-            <h1>Unit V Project</h1>
+    <div class="container">
+        <form action="homepage.html" method="get" id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-        </header>
-        <section id="projects">
-        </section>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-        <section id="project-cards">
-            <div class="page-card">
-                <div class="page-title">
-                    Pokemon Project
-                </div>
-                <img src="eevee21.png" alt="" class="page-img">
-                <div class="page-description">
-                    This is my Unit V project. I am displaying an Eevee. I have a lot of work to do.
-                </div>
-            </div>
-
-
-        </section>
-        <footer>Sticky Footer</footer>
-
-
-        
-    </main>
-    <script src="script.js"></script>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="userLogin.js"></script>
 </body>
 
 </html>
