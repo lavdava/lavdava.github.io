@@ -15,17 +15,21 @@
     <header>
         <h1>Request Form</h1>
     </header>
-    <form action="">
+    <form action="requestResults.html" id="form" method="get">
         <fieldset id="pers-info">
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name">
             <label for="grade">Grade:</label>
             <div id="grade-input">
-                <label for="nine"><input type="radio" name="grade">9th </label>
-                <label for="ten"><input type="radio" name="grade">10th </label>
-                <label for="eleven"><input type="radio" name="grade">11th </label>
-                <label for="twelve"><input type="radio" name="grade">12th </label>
+                <div id="grade-input">
+                    <label for="nine"><input type="radio" name="grade" id="nine" value="9th Grade">9th </label>
+                    <label for="ten"><input type="radio" name="grade" id="ten" value="10th Grade">10th </label>
+                    <label for="eleven"><input type="radio" name="grade" id="eleven" value="11th Grade">11th </label>
+                    <label for="twelve"><input type="radio" name="grade" id="twelve" value="12th Grade">12th </label>
+
+                </div>
+
             </div>
         </fieldset>
 
@@ -52,7 +56,7 @@
             <input type="time" name="time" id="time">
         </fieldset>
 
-        <div id="submitbtn">Submit</div>
+        <button type="submit">Submit</button>
     </form>
     <script src="request.js"></script>
     <script src="/script2.js"></script>
