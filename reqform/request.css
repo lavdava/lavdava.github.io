@@ -1,8 +1,9 @@
-h1{
+h1 {
     text-align: center;
     background-color: aquamarine;
 }
-fieldset{
+
+fieldset {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -10,22 +11,23 @@ fieldset{
     font-size: 1.5rem;
 }
 
-form{
+form {
     justify-self: center;
 }
 
-select{
+select {
     font-size: 1.2rem;
 }
 
-input{
+input {
     font-size: 1.2rem;
 }
-#grade-input{
+
+#grade-input {
     display: flex;
 }
 
-#submitbtn{
+#submitbtn {
     height: 50px;
     width: 150px;
     background-color: #321aa2

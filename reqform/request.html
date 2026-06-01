@@ -19,15 +19,16 @@
         <fieldset id="pers-info">
             <legend>Personal Information</legend>
             <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
             <label for="grade">Grade:</label>
             <div id="grade-input">
                 <div id="grade-input">
-                    <label for="nine"><input type="radio" name="grade" id="nine" value="9th Grade">9th </label>
-                    <label for="ten"><input type="radio" name="grade" id="ten" value="10th Grade">10th </label>
-                    <label for="eleven"><input type="radio" name="grade" id="eleven" value="11th Grade">11th </label>
-                    <label for="twelve"><input type="radio" name="grade" id="twelve" value="12th Grade">12th </label>
-
+                    <label for="nine"><input type="radio" name="grade" id="nine" value="9th Grade" required>9th </label>
+                    <label for="ten"><input type="radio" name="grade" id="ten" value="10th Grade" required>10th </label>
+                    <label for="eleven"><input type="radio" name="grade" id="eleven" value="11th Grade" required>11th
+                    </label>
+                    <label for="twelve"><input type="radio" name="grade" id="twelve" value="12th Grade" required>12th
+                    </label>
                 </div>
 
             </div>
@@ -35,7 +36,10 @@
 
         <fieldset id="app-info">
             <label for="type">Request Type:</label>
-            <select name="type" id="type">
+            <select name="type" id="type" required>
+                <option value="">
+                    Select a type
+                </option>
                 <option value="1">
                     Counselor
                 </option>
@@ -50,10 +54,10 @@
                 </option>
             </select>
             <label for="date">Date:</label>
-            <input type="date" name="date" id="date">
+            <input type="date" name="date" id="date" required>
 
             <label for="time">Time:</label>
-            <input type="time" name="time" id="time">
+            <input type="time" name="time" id="time" required>
         </fieldset>
 
         <button type="submit">Submit</button>
